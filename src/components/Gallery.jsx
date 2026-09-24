@@ -1,8 +1,8 @@
-import gallery1 from '../assets/gallery-1.jpg'
-import gallery2 from '../assets/gallery-2.jpg'
-import gallery3 from '../assets/gallery-3.jpg'
-import gallery4 from '../assets/gallery-4.jpg'
-import gallery5 from '../assets/gallery-5.jpg'
+import gallery1 from '../assets/gallery-garden.jpg'
+import gallery2 from '../assets/gallery-food.jpg'
+import gallery3 from '../assets/gallery-potatoes.jpg'
+import gallery4 from '../assets/gallery-playground.jpg'
+import gallery5 from '../assets/gallery-entrance.jpg'
 
 function Gallery() {
   return (
@@ -14,14 +14,29 @@ function Gallery() {
         <div className="gallery-grid">
           <img
             src={gallery1}
-            alt="Природа около ресторанта"
+            alt="Градината на ресторант Горхим"
             className="gallery-large"
           />
 
-          <img src={gallery2} alt="Храна" />
-          <img src={gallery3} alt="Ястие" />
-          <img src={gallery4} alt="Интериор" />
-          <img src={gallery5} alt="Планината" />
+          <img
+            src={gallery2}
+            alt="Традиционна кухня в ресторант Горхим"
+          />
+
+          <img
+            src={gallery3}
+            alt="Картофи с розмарин"
+          />
+
+          <img
+            src={gallery4}
+            alt="Детска площадка с изглед към планината"
+          />
+
+          <img
+            src={gallery5}
+            alt="Ресторант Горхим"
+          />
         </div>
       </div>
     </section>

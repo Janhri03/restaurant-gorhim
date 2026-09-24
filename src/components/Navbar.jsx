@@ -12,8 +12,8 @@ function Navbar() {
         <a href="#location">Контакти</a>
       </nav>
 
-      <a href="#location" className="nav-reservation">
-        Резервация
+      <a href="#location" className="nav-contact">
+        НАМЕРЕТЕ НИ
       </a>
     </header>
   )

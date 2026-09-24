@@ -4,8 +4,8 @@ function Location() {
       <div className="container location-grid">
         <div className="map">
           <iframe
-            title="Gorhim location"
-            src="https://www.google.com/maps?q=Bulgaria&output=embed"
+            title="Ресторант Горхим"
+            src="https://www.google.com/maps?q=%D0%93%D0%BE%D1%80%D1%85%D0%B8%D0%BC%2C%20%D0%94%D1%83%D0%BF%D0%BD%D0%B8%D1%86%D0%B0%2C%20Bulgaria&output=embed"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
@@ -22,22 +22,9 @@ function Location() {
             <div>
               <h3>Адрес</h3>
               <p>
-                Добавете реалния адрес
+                Местност Горхим
                 <br />
-                на ресторант Горхим
-              </p>
-            </div>
-          </div>
-
-          <div className="contact-row">
-            <span className="contact-icon">◷</span>
-
-            <div>
-              <h3>Работно време</h3>
-              <p>
-                Понеделник – Неделя
-                <br />
-                10:00 – 23:00
+                2600 Дупница, България
               </p>
             </div>
           </div>
@@ -47,12 +34,17 @@ function Location() {
 
             <div>
               <h3>Телефон</h3>
-              <p>+359 88 000 0000</p>
+              <p>+359 878 101 218</p>
             </div>
           </div>
 
-          <a href="#" className="button button-gold location-button">
-            Направи резервация
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Горхим+Дупница+България"
+            target="_blank"
+            rel="noreferrer"
+            className="button button-gold location-button"
+          >
+            Отвори в Google Maps
           </a>
         </div>
       </div>
