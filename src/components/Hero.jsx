@@ -9,22 +9,22 @@ function Hero() {
     >
       <div className="hero-overlay"></div>
 
-      <div className="hero-content">
-        <p className="hero-eyebrow">РЕСТОРАНТ</p>
+      <div className="hero-content container">
+        <p className="eyebrow">РЕСТОРАНТ</p>
 
         <h1>Горхим</h1>
 
-        <p className="hero-description">
-          Насладете се на автентична кухня, уютна атмосфера
-          и красивата природа около нас.
+        <p className="hero-text">
+          Вкусът на планината, съчетан с уют,
+          традиция и незабравима атмосфера.
         </p>
 
-        <div className="hero-actions">
-          <a href="#menu" className="btn btn-primary">
+        <div className="hero-buttons">
+          <a href="#menu" className="button button-gold">
             Виж менюто
           </a>
 
-          <a href="#about" className="btn btn-secondary">
+          <a href="#about" className="button button-transparent">
             За нас
           </a>
         </div>

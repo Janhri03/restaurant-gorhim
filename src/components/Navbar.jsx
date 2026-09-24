@@ -1,20 +1,21 @@
 function Navbar() {
   return (
-    <nav className="navbar">
-      <div className="navbar-logo">ГОРХИМ</div>
+    <header className="navbar">
+      <a href="#home" className="logo">
+        ГОРХИМ
+      </a>
 
-      <div className="navbar-links">
-        <a href="#home">Начало</a>
+      <nav className="nav-links">
         <a href="#about">За нас</a>
         <a href="#menu">Меню</a>
-        <a href="#gallery">Снимки</a>
-        <a href="#contact">Контакти</a>
-      </div>
+        <a href="#gallery">Галерия</a>
+        <a href="#location">Контакти</a>
+      </nav>
 
-      <a href="#contact" className="navbar-button">
+      <a href="#location" className="nav-reservation">
         Резервация
       </a>
-    </nav>
+    </header>
   )
 }
 
