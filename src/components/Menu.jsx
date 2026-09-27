@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 const menuItems = [
   {
     name: 'Шопска салата',
@@ -50,9 +51,9 @@ function Menu() {
           ))}
         </div>
 
-        <a href="#" className="menu-link">
+        <Link to="/menu" className="menu-link">
           Разгледай цялото меню →
-        </a>
+        </Link>
       </div>
     </section>
   )
