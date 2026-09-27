@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import menuData from './data/menuData'
+import menuData from '../data/restaurantMenu.js'
 
 function MenuPage() {
   return (

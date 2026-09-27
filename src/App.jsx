@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { Route, Routes } from 'react-router-dom'
 
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
@@ -7,10 +8,11 @@ import Menu from './components/Menu'
 import Gallery from './components/Gallery'
 import Location from './components/Location'
 import Footer from './components/Footer'
+import MenuPage from './pages/MenuPage'
 
 import './App.css'
 
-function App() {
+function HomePage() {
   useEffect(() => {
     const elements = document.querySelectorAll('.reveal')
 
@@ -47,6 +49,15 @@ function App() {
       <Location />
       <Footer />
     </>
+  )
+}
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/menu" element={<MenuPage />} />
+    </Routes>
   )
 }
 
