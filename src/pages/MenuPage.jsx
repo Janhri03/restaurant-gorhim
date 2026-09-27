@@ -1,12 +1,16 @@
-import { useEffect } from 'react'
+import { useLayoutEffect } from 'react'
 import { Link } from 'react-router-dom'
 import menuData from '../data/restaurantMenu.js'
 
 function MenuPage() {
-    useEffect(() => {
-        window.scrollTo(0, 0)
+    useLayoutEffect(() => {
+        window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'auto',
+        })
     }, [])
-    
+
   return (
     <main className="full-menu-page">
       <header className="menu-page-header">
