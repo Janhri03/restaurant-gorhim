@@ -17,13 +17,17 @@
    GENERAL
    ========================= */
 
-html,
+html {
+  width: 100%;
+  margin: 0;
+  overflow-x: clip;
+}
+
 body {
   width: 100%;
-
+  min-width: 320px;
   margin: 0;
-
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 body.menu-open {
@@ -32,8 +36,7 @@ body.menu-open {
 
 #root {
   width: 100%;
-
-  overflow-x: hidden;
+  min-height: 100vh;
 }
 
 .container {
@@ -53,9 +56,7 @@ h3 {
 
 h2 {
   font-size: clamp(46px, 5vw, 70px);
-
   line-height: 0.95;
-
   font-weight: 600;
 }
 
@@ -65,14 +66,12 @@ p {
 
 .eyebrow {
   margin-bottom: 18px;
-
   color: var(--gold);
 
   font-size: 12px;
   font-weight: 600;
 
   letter-spacing: 3px;
-
   text-transform: uppercase;
 }
 
@@ -86,7 +85,6 @@ p {
 
 .navbar {
   position: absolute;
-
   top: 0;
   left: 50%;
 
@@ -117,7 +115,6 @@ p {
 .nav-links {
   display: flex;
   align-items: center;
-
   gap: 38px;
 }
 
@@ -127,7 +124,6 @@ p {
   color: rgba(255, 255, 255, 0.82);
 
   font-size: 13px;
-
   letter-spacing: 0.5px;
 
   transition: color 0.2s ease;
@@ -168,7 +164,6 @@ p {
   font-weight: 600;
 
   letter-spacing: 1px;
-
   text-transform: uppercase;
 
   transition:
@@ -193,7 +188,6 @@ p {
   display: none;
 
   position: relative;
-
   z-index: 120;
 
   width: 32px;
@@ -202,7 +196,6 @@ p {
   padding: 0;
 
   border: none;
-
   background: transparent;
 
   cursor: pointer;
@@ -258,7 +251,6 @@ p {
 
 .hero-overlay {
   position: absolute;
-
   inset: 0;
 
   background:
@@ -277,7 +269,6 @@ p {
 
 .hero-content {
   position: relative;
-
   z-index: 2;
 
   padding-top: 80px;
@@ -292,7 +283,6 @@ p {
   font-weight: 600;
 
   line-height: 0.85;
-
   letter-spacing: -3px;
 }
 
@@ -302,13 +292,11 @@ p {
   color: rgba(255, 255, 255, 0.82);
 
   font-size: 16px;
-
   line-height: 1.8;
 }
 
 .hero-buttons {
   display: flex;
-
   gap: 15px;
 
   margin-top: 34px;
@@ -331,7 +319,6 @@ p {
   font-weight: 600;
 
   letter-spacing: 0.8px;
-
   text-transform: uppercase;
 
   transition:
@@ -347,7 +334,6 @@ p {
 
 .button-gold {
   background: var(--gold);
-
   color: var(--green-dark);
 }
 
@@ -357,15 +343,12 @@ p {
 
 .button-transparent {
   border: 1px solid rgba(255, 255, 255, 0.5);
-
   color: white;
 }
 
 .button-transparent:hover {
   border-color: white;
-
   background: white;
-
   color: var(--green);
 }
 
@@ -379,11 +362,9 @@ p {
 
 .about-grid {
   display: grid;
-
   grid-template-columns: 0.95fr 1.05fr;
 
   align-items: center;
-
   gap: 70px;
 
   width: min(1180px, 88%);
@@ -393,7 +374,6 @@ p {
 
 .about-image-wrapper {
   height: 430px;
-
   overflow: hidden;
 }
 
@@ -428,13 +408,11 @@ p {
   color: #626b65;
 
   font-size: 15px;
-
   line-height: 1.85;
 }
 
 .about-features {
   display: grid;
-
   grid-template-columns: 1fr 1fr;
 
   margin-top: 22px;
@@ -456,7 +434,6 @@ p {
   content: '•';
 
   position: absolute;
-
   left: 0;
 
   color: var(--gold);
@@ -470,13 +447,11 @@ p {
   padding: 90px 0 110px;
 
   background: var(--green);
-
   color: white;
 }
 
 .menu-heading {
   display: grid;
-
   grid-template-columns: 1fr 1fr;
 
   align-items: end;
@@ -496,7 +471,6 @@ p {
   color: rgba(255, 255, 255, 0.62);
 
   font-size: 15px;
-
   line-height: 1.8;
 }
 
@@ -533,7 +507,6 @@ p {
   color: rgba(255, 255, 255, 0.55);
 
   font-size: 14px;
-
   line-height: 1.6;
 }
 
@@ -551,7 +524,6 @@ p {
   color: var(--gold);
 
   font-size: 13px;
-
   letter-spacing: 1px;
 }
 
@@ -589,7 +561,6 @@ p {
 
 .gallery-grid img:hover {
   transform: scale(1.04);
-
   filter: brightness(1.05);
 }
 
@@ -615,23 +586,19 @@ p {
   padding: 90px 0;
 
   background: var(--green-dark);
-
   color: white;
 }
 
 .location-grid {
   display: grid;
-
   grid-template-columns: 1.25fr 0.85fr;
 
   align-items: stretch;
-
   gap: 90px;
 }
 
 .map {
   min-height: 380px;
-
   overflow: hidden;
 }
 
@@ -660,7 +627,6 @@ p {
 
 .contact-row {
   display: grid;
-
   grid-template-columns: 25px 1fr;
 
   margin-bottom: 24px;
@@ -681,7 +647,6 @@ p {
   font-weight: 600;
 
   letter-spacing: 1px;
-
   text-transform: uppercase;
 }
 
@@ -689,13 +654,11 @@ p {
   color: rgba(255, 255, 255, 0.66);
 
   font-size: 15px;
-
   line-height: 1.7;
 }
 
 .location-button {
   width: fit-content;
-
   margin-top: 12px;
 }
 
@@ -731,13 +694,11 @@ p {
 .footer p,
 .footer a {
   font-size: 14px;
-
   line-height: 1.7;
 }
 
 .footer-links {
   display: flex;
-
   gap: 20px;
 }
 
@@ -750,12 +711,11 @@ p {
 }
 
 /* =========================
-   SCROLL ANIMATIONS
+   ANIMATIONS
    ========================= */
 
 .reveal {
   opacity: 0;
-
   transform: translateY(40px);
 
   transition:
@@ -765,13 +725,8 @@ p {
 
 .reveal.visible {
   opacity: 1;
-
   transform: translateY(0);
 }
-
-/* =========================
-   HERO ANIMATIONS
-   ========================= */
 
 .hero .eyebrow {
   animation: heroFadeUp 0.7s ease 0.15s both;
@@ -792,13 +747,11 @@ p {
 @keyframes heroFadeUp {
   from {
     opacity: 0;
-
     transform: translateY(25px);
   }
 
   to {
     opacity: 1;
-
     transform: translateY(0);
   }
 }
@@ -818,7 +771,6 @@ p {
 
   .about-grid {
     width: 88%;
-
     gap: 50px;
   }
 
@@ -852,9 +804,9 @@ p {
     position: fixed;
 
     top: 0;
-    right: -100%;
+    right: 0;
 
-    width: min(340px, 82%);
+    width: min(340px, 82vw);
     height: 100dvh;
 
     padding: 110px 35px 40px;
@@ -873,13 +825,23 @@ p {
     overflow-y: auto;
     overflow-x: hidden;
 
-    transition: right 0.35s ease;
+    transform: translateX(100%);
+
+    visibility: hidden;
+    pointer-events: none;
+
+    transition:
+      transform 0.35s ease,
+      visibility 0.35s ease;
 
     z-index: 110;
   }
 
   .nav-links.nav-open {
-    right: 0;
+    transform: translateX(0);
+
+    visibility: visible;
+    pointer-events: auto;
   }
 
   .nav-links a {
@@ -925,13 +887,11 @@ p {
 
   .hero {
     min-height: 680px;
-
     background-position: center;
   }
 
   .hero-content {
     width: 88%;
-
     padding-top: 70px;
   }
 
@@ -941,7 +901,6 @@ p {
 
   .hero-text {
     max-width: 480px;
-
     font-size: 16px;
   }
 
@@ -951,7 +910,6 @@ p {
 
   .about-grid {
     grid-template-columns: 1fr;
-
     gap: 45px;
   }
 
@@ -972,13 +930,11 @@ p {
 
   .menu-heading {
     grid-template-columns: 1fr;
-
     gap: 24px;
   }
 
   .menu-intro {
     max-width: 550px;
-
     justify-self: start;
   }
 
@@ -1024,7 +980,6 @@ p {
 
   .location-grid {
     grid-template-columns: 1fr;
-
     gap: 45px;
   }
 
@@ -1090,7 +1045,6 @@ p {
 
   .hero-content {
     width: 88%;
-
     padding-top: 70px;
   }
 
@@ -1114,7 +1068,6 @@ p {
 
   .hero-buttons {
     margin-top: 28px;
-
     gap: 10px;
   }
 
@@ -1132,13 +1085,11 @@ p {
 
   .about-grid {
     width: 88%;
-
     gap: 35px;
   }
 
   .about-image-wrapper {
     height: auto;
-
     aspect-ratio: 4 / 3;
   }
 
@@ -1148,7 +1099,6 @@ p {
 
   .about-content > p:not(.eyebrow) {
     font-size: 15px;
-
     line-height: 1.8;
   }
 
@@ -1174,7 +1124,6 @@ p {
 
   .menu-intro {
     font-size: 15px;
-
     line-height: 1.7;
   }
 
@@ -1184,7 +1133,6 @@ p {
     padding: 23px 0;
 
     align-items: flex-start;
-
     gap: 20px;
   }
 
@@ -1198,7 +1146,6 @@ p {
     padding-right: 0;
 
     font-size: 14px;
-
     line-height: 1.6;
   }
 
@@ -1425,7 +1372,6 @@ p {
 
   .reveal {
     opacity: 1;
-
     transform: none;
   }
 }

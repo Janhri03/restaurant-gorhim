@@ -2,8 +2,6 @@
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 html {
@@ -11,12 +9,13 @@ html {
 }
 
 body {
+  margin: 0;
   min-width: 320px;
 
   font-family: 'Inter', sans-serif;
 
-  background: #f2ede3;
-  color: #16231d;
+  background: #f3eee3;
+  color: #1c2923;
 }
 
 a {
@@ -26,7 +25,7 @@ a {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
 }
 
 button,
