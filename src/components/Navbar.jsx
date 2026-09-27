@@ -1,7 +1,19 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
+
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.classList.add('menu-open')
+    } else {
+      document.body.classList.remove('menu-open')
+    }
+
+    return () => {
+      document.body.classList.remove('menu-open')
+    }
+  }, [menuOpen])
 
   const closeMenu = () => {
     setMenuOpen(false)
@@ -46,7 +58,7 @@ function Navbar() {
       <button
         className={`hamburger ${menuOpen ? 'active' : ''}`}
         onClick={() => setMenuOpen(!menuOpen)}
-        aria-label="Отвори меню"
+        aria-label={menuOpen ? 'Затвори меню' : 'Отвори меню'}
         aria-expanded={menuOpen}
       >
         <span></span>
