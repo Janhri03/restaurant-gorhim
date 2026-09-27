@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer reveal">
       <div className="container footer-content">
         <a href="#home" className="footer-logo">
           ГОРХИМ

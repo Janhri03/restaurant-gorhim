@@ -23,7 +23,7 @@ const menuItems = [
 
 function Menu() {
   return (
-    <section className="menu-section" id="menu">
+    <section className="menu-section reveal" id="menu">
       <div className="container menu-container">
         <div className="menu-heading">
           <div>

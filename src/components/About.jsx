@@ -2,7 +2,7 @@ import aboutImage from '../assets/about.jpg'
 
 function About() {
   return (
-    <section className="about section" id="about">
+    <section className="about section reveal" id="about">
       <div className="about-grid">
         <div className="about-image-wrapper">
           <img

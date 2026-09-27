@@ -1,6 +1,6 @@
 function Location() {
   return (
-    <section className="location-section" id="location">
+    <section className="location-section reveal" id="location">
       <div className="container location-grid">
         <div className="map">
           <iframe

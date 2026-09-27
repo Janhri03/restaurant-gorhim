@@ -6,7 +6,7 @@ import gallery5 from '../assets/gallery-entrance.jpg'
 
 function Gallery() {
   return (
-    <section className="gallery-section section" id="gallery">
+    <section className="gallery-section section reveal" id="gallery">
       <div className="container">
         <p className="eyebrow dark-eyebrow">ГАЛЕРИЯ</p>
         <h2>Снимки</h2>
