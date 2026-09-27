@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom'
 import menuData from '../data/restaurantMenu.js'
 
 function MenuPage() {
-    useLayoutEffect(() => {
-        window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: 'auto',
-        })
-    }, [])
+  useLayoutEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'auto',
+    })
+  }, [])
 
   return (
     <main className="full-menu-page">
@@ -29,9 +29,11 @@ function MenuPage() {
 
           <h1>Нашето меню</h1>
 
-          <p>
-            Традиционни ястия, приготвени с внимание и подбрани
-            продукти.
+          <div className="menu-hero-divider"></div>
+
+          <p className="menu-hero-description">
+            Традиционни ястия, приготвени с внимание, подбрани продукти
+            и вкус, вдъхновен от планината.
           </p>
         </div>
       </header>
@@ -49,28 +51,40 @@ function MenuPage() {
             ))}
           </nav>
 
-          {menuData.map((section) => (
+          {menuData.map((section, sectionIndex) => (
             <section
               className="full-menu-category"
               id={section.category.replaceAll(' ', '-')}
               key={section.category}
             >
               <div className="category-heading">
-                <p className="eyebrow dark-eyebrow">ГОРХИМ</p>
-                <h2>{section.category}</h2>
+                <div>
+                  <p className="eyebrow dark-eyebrow">
+                    {String(sectionIndex + 1).padStart(2, '0')}
+                  </p>
+
+                  <h2>{section.category}</h2>
+                </div>
+
+                <span className="category-count">
+                  {section.items.length} предложения
+                </span>
               </div>
 
               <div className="full-menu-list">
                 {section.items.map((item) => (
                   <article className="full-menu-item" key={item.name}>
                     <div className="full-menu-info">
-                      <h3>{item.name}</h3>
+                      <div className="menu-item-title-row">
+                        <h3>{item.name}</h3>
+                        <span className="menu-item-line"></span>
+                      </div>
 
                       {item.description && (
                         <p>{item.description}</p>
                       )}
 
-                      <span>{item.weight}</span>
+                      <span className="menu-weight">{item.weight}</span>
                     </div>
 
                     <div className="full-menu-price">
@@ -91,7 +105,9 @@ function MenuPage() {
             ГОРХИМ
           </Link>
 
-          <Link to="/">← Обратно към началната страница</Link>
+          <p>Традиция, вкус и планинска атмосфера.</p>
+
+          <Link to="/">← Начало</Link>
         </div>
       </footer>
     </main>
