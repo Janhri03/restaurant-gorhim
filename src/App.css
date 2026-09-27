@@ -278,7 +278,7 @@ p {
 
 .hero h1 {
   margin-bottom: 24px;
-
+  margin-top: 30px;
   font-size: clamp(92px, 9vw, 138px);
   font-weight: 600;
 
@@ -357,7 +357,7 @@ p {
    ========================= */
 
 .about {
-  padding: 80px 0;
+  padding: 110px 0;
 }
 
 .about-grid {
@@ -398,6 +398,7 @@ p {
 
 .about-content h2 {
   margin-bottom: 30px;
+  margin-top: 10px;
 }
 
 .about-content > p:not(.eyebrow) {
@@ -461,6 +462,8 @@ p {
 
 .menu-heading h2 {
   color: white;
+  margin-top: 30px;
+  margin-bottom: 0;
 }
 
 .menu-intro {
@@ -537,6 +540,7 @@ p {
 
 .gallery-section h2 {
   margin-bottom: 40px;
+  margin-top: 30px;
 }
 
 .gallery-grid {
@@ -621,7 +625,7 @@ p {
 
 .location-content h2 {
   margin-bottom: 35px;
-
+  margin-top: 10px;
   font-size: 52px;
 }
 
