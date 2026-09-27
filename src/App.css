@@ -277,7 +277,7 @@ p {
 }
 
 .hero h1 {
-  margin-bottom: 24px;
+  margin-bottom: 40px;
   margin-top: 30px;
   font-size: clamp(92px, 9vw, 138px);
   font-weight: 600;
