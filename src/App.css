@@ -552,6 +552,29 @@ p {
   transform: translateY(-2px);
 }
 
+.menu-preview-price {
+  flex-shrink: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  gap: 4px;
+}
+
+.menu-preview-price strong {
+  color: var(--gold);
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.menu-preview-price span {
+  color: rgba(255, 255, 255, 0.55);
+
+  font-size: 12px;
+}
+
 /* =========================
    GALLERY
    ========================= */

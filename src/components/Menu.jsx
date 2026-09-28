@@ -1,24 +1,33 @@
 import { Link } from 'react-router-dom'
+
 const menuItems = [
   {
-    name: 'Шопска салата',
-    description: 'Домати, краставици, сирене, чушки и лук',
-    price: '12 лв.',
+    name: 'Салата „Горхим“',
+    description:
+      'Зеле, домати, краставици, царевица, кашкавал, рулца от раци и сос',
+    euro: '9.20 €',
+    bgn: '17.99 лв.',
   },
   {
-    name: 'Катък с печени чушки',
-    description: 'Домашен катък, печени чушки и свежи подправки',
-    price: '11 лв.',
+    name: 'Гювече по Родопски',
+    description:
+      'Пилешко филе, гъби, бекон, сметана, картофено пюре и кашкавал',
+    euro: '8.90 €',
+    bgn: '17.41 лв.',
   },
   {
-    name: 'Телешки суджук',
-    description: 'Поднесен с гарнитура и домашен хляб',
-    price: '18 лв.',
+    name: 'Пилешко със зеленчуци на плоча',
+    description:
+      'Пилешко месо със свежи зеленчуци, приготвени на плоча',
+    euro: '9.80 €',
+    bgn: '19.17 лв.',
   },
   {
-    name: 'Свински врат на скара',
-    description: 'С картофи, сезонни зеленчуци и сос',
-    price: '22 лв.',
+    name: 'Пъстърва на скара',
+    description:
+      'Прясна пъстърва, приготвена на скара',
+    euro: '8.90 €',
+    bgn: '17.41 лв.',
   },
 ]
 
@@ -28,13 +37,13 @@ function Menu() {
       <div className="container menu-container">
         <div className="menu-heading">
           <div>
-            <p className="eyebrow">НАШЕТО МЕНЮ</p>
-            <h2>Нашата кухня</h2>
+            <p className="eyebrow">ЛЮБИМИ НА ГОСТИТЕ</p>
+
+            <h2>Най-поръчвани</h2>
           </div>
 
           <p className="menu-intro">
-            Подбрани ястия, вдъхновени от българската кухня
-            и вкусовете на планината.
+            Четири от ястията, които най-добре представят вкуса на Горхим.
           </p>
         </div>
 
@@ -46,7 +55,10 @@ function Menu() {
                 <p>{item.description}</p>
               </div>
 
-              <span>{item.price}</span>
+              <div className="menu-preview-price">
+                <strong>{item.euro}</strong>
+                <span>{item.bgn}</span>
+              </div>
             </div>
           ))}
         </div>
